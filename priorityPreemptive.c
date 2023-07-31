@@ -62,13 +62,12 @@ void main()
 }
 /*
 Enter the number of Process: 5
-Enter AT for process 1 :
-2
+Enter AT for process 1 :2
 Enter BT for process 1 :1
 Enter Priority for process 1 :3
 Enter AT for process 2 :1
 Enter BT for process 2 :5
-Enter Priority for process 2 :3
+Enter Priority for process 2 :2
 Enter AT for process 3 :4
 Enter BT for process 3 :1
 Enter Priority for process 3 :1
@@ -80,14 +79,14 @@ Enter BT for process 5 :3
 Enter Priority for process 5 :2
 
 Gantt Chart:
-| P4(1) 1| P2(1) 2| P5(1) 3| P5(1) 4| P3(1) 5| P5(1) 6| P2(1) 7| P2(1) 8| P2(1) 9| P2(1) 10| P1(1) 11| P4(1) 12| P4(1) 13| P4(1) 14| P4(1) 15| P4(1) 16
+| P4(1) 1| P2(1) 2| P2(1) 3| P2(1) 4| P3(1) 5| P2(1) 6| P2(1) 7| P5(1) 8| P5(1) 9| P5(1) 10| P1(1) 11| P4(1) 12| P4(1) 13| P4(1) 14| P4(1) 15| P4(1) 16
 
 ID      AT      BT      PRI     CT      WT      TAT
 1       2       1       3       11      8       9
-2       1       5       3       10      4       9
+2       1       5       2       7       1       6
 3       4       1       1       5       0       1
 4       0       6       4       16      10      16
-5       2       3       2       6       1       4
-AVG TAT : 7.800
-AVG WT : 4.600
+5       2       3       2       10      5       8
+AVG TAT : 8.000
+AVG WT : 4.800
 */
