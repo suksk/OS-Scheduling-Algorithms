@@ -49,6 +49,10 @@ void main()
                 COMP++;
             }
         }
+        else
+        {
+            printf("| Idle(1)");
+        }
     }
     printf("\nID\tAT\tBT\tCT\tWT\tTAT\n");
     for (i = 0; i < n; i++)
