@@ -110,7 +110,7 @@ void main()
                 if (i == curIndex)
                     break;
             }
-            printf("|IDLE%d %d", p[i + 1].AT - p[i].CT);
+            printf("|IDLE%d %d", p[i + 1].AT - p[i].CT, p[i + 1].AT);
             curTime += p[i + 1].AT - p[i].CT;
             p[i + 1].flag = 1;
             waitQueue[rear] = i + 1;
