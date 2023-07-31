@@ -33,7 +33,7 @@ void sort(int n)
 
 void main()
 {
-    int n, tempBT[15], total_WT = 0, total_TAT = 0, quantum;
+    int n, total_WT = 0, total_TAT = 0, quantum;
     float avg_WT = 0, avg_TAT = 0;
     printf("\nEnter the number of processes:\n");
     scanf("%d", &n);
