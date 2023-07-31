@@ -1,6 +1,4 @@
-/*****************************************************************************************************************
-  Program to demonstrate the Round Robin cpu scheduling algorithm.
-*****************************************************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -58,12 +56,6 @@ void main()
     cnt++;
     waitQueue[rear] = 0;
     p[0].flag = 1;
-
-    printf("\nPID\tAT\tBT\tCT\tTAT\tWT\n");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d\t%d\t%d\t%d\t%d\t%d\n", p[i].Id, p[i].AT, p[i].temp, p[i].CT, p[i].TAT, p[i].WT);
-    }
 
     while (completed != n)
     {
@@ -150,21 +142,14 @@ Enter the number of processes:
 
 Enter the arrival time and burst time of the process:
 AT BT
-2  1
-1  5
-4  1
-0  6
-2  3
+2 1
+1 5
+4 1
+0 6
+2 3
 
 Enter the time quantum:
 2
-
-PID     AT      BT      CT      TAT     WT
-4       0       6       0       0       0
-2       1       5       0       0       0
-1       2       1       0       0       0
-5       2       3       0       0       0
-3       4       1       0       0       0
 | P4(2) 2| P2(2) 4| P1(1) 5| P5(2) 7| P4(2) 9| P3(1) 10| P2(2) 12| P5(1) 13| P4(2) 15| P2(1) 16
 PID     AT      BT      CT      TAT     WT
 4       0       6       15      15      9
